@@ -13,7 +13,7 @@ namespace HireMeNow_BlazorApp.Extensions
         {
 			services.AddDbContextPool<HireMeNowDbContext>(options =>
 		options.UseSqlServer(config.GetConnectionString("DefaultConnection"))
-	);
+		);
 			     services.AddScoped<IUserService, UserService>();
 			     services.AddScoped<IUserRepository, UserRepository>();
 			services.AddScoped<IInterviewServices, InterviewServices>();
